@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+<title>Lab 1 - task 4</title>
+<base href="http://warez.md/" />
+   <script type="text/javascript">
+            var imgObj = null;
+            var animate ;
+            var j = 0;
+			var left = 0;
+			var time = 1000;
+            function init(){
+               imgObj = document.getElementById('rounded_square');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+            }
+            
+            function moveRight(){
+			if (j<window.innerWidth)  {imgObj.style.left = parseInt(imgObj.style.left) + left + 'px';
+               animate = setTimeout(moveRight, time); // call moveRight in 20msec
+			   j+=200;
+			   left = 200;
+			} else clearTimeout(animate);
+             }
+            window.onload =init;
+             </script>
+
+</head>
+<body onload = moveRight()>
+<div id="rounded_square" class="blue"  > </div>
+<!--TODO: upon opening make square move from left to right by 200 pixels . use timer, and attribute "left" or "margin-left" -->
+</body>
+</html>

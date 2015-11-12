@@ -1,0 +1,9 @@
+Create a calculator web page.
+1. radio button to switch between decimal and hexamal numeric systems
+2. buttons 0-9 or 0-f for inputing numbers by clicking
+3. edit box for inputing values from keyboard
+4. buttons +*-/=
+5. result field
+6. ADVANCED: math error handling with color hilightning
+7. ADVANCED: ajax logging of equation  to a server 
+8. OPTIONAL: use styling, prefferably twiter bootstrap template
